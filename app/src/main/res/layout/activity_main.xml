@@ -13,7 +13,7 @@
         android:padding="5dp"
         android:text="Marah Hammo"
         android:textColor="@color/black"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/tv2"
@@ -23,14 +23,14 @@
         android:padding="5dp"
         android:textColor="@color/black"
         android:text="Linear Layout (without Weight)"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textColor="@color/black"
         android:text="BUTTON 1"
         android:gravity="center"
@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textColor="@color/black"
         android:text="BUTTON 2"
         android:gravity="center"
@@ -52,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textColor="@color/black"
         android:text="BUTTON 3"
         android:gravity="center"
@@ -63,7 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textColor="@color/black"
         android:text="BUTTON 4"
         android:gravity="center"
@@ -76,6 +76,6 @@
         android:padding="30dp"
         android:text="Linear Layout UI"
         android:textColor="@color/green"
-        android:textSize="40dp" />
+        android:textSize="40sp" />
 
 </LinearLayout>
