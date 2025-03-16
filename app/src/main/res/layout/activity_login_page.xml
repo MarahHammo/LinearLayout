@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="famous"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:hint="Email"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/et_email"
+        android:layout_marginTop="30dp"
+        android:inputType="numberPassword"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="login"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:background="#cc1c1c"
+        android:layout_below="@+id/et_password"/>
+
+
+    <TextView
+        android:id="@+id/tv_signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No acount yet? Create one"
+        android:textSize="20sp"
+        android:textColor="#FE8D88"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btn"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

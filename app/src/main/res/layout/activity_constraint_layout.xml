@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ConstraintLayout">
+
+    <!-- Start Top Bar  -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#212121"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:src="@drawable/user_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/user_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageView
+            android:id="@+id/diamond_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/diamond_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/add_up_icon"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/add_up_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/add_up_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--  End Top Bar  -->
+
+    <!--  Start Center Section  -->
+
+
+    <TextView
+        android:id="@+id/places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Places"
+        android:textColor="@color/lightGray"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar" />
+
+    <ImageView
+        android:id="@+id/recent_icon"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/recent_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/places"/>
+
+    <TextView
+        android:id="@+id/recent_text"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Recent"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/recent_icon"
+        app:layout_constraintTop_toBottomOf="@+id/places" />
+
+    <ImageView
+        android:id="@+id/shared_icon"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/shared_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recent_icon"/>
+
+    <TextView
+        android:id="@+id/shared_text"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Shared with me"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/shared_icon"
+        app:layout_constraintTop_toBottomOf="@+id/recent_text" />
+
+    <ImageView
+        android:id="@+id/device_icon"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/device_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shared_icon"/>
+
+    <TextView
+        android:id="@+id/device_text"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="This device"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/device_icon"
+        app:layout_constraintTop_toBottomOf="@+id/shared_text" />
+
+    <ImageView
+        android:id="@+id/browse_icon"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/browse_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/device_icon"/>
+
+    <TextView
+        android:id="@+id/browse_text"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Browse"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/browse_icon"
+        app:layout_constraintTop_toBottomOf="@+id/device_text" />
+
+    <TextView
+        android:id="@+id/browse_details"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Google Drive, SD card, and more..."
+        android:textSize="15sp"
+        android:textColor="@color/lightGray"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/browse_icon"
+        app:layout_constraintTop_toBottomOf="@+id/browse_text"/>
+
+    <ImageView
+        android:id="@+id/add_down_icon"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/add_down_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/browse_icon"/>
+
+    <TextView
+        android:id="@+id/add_text"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Add a place"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/add_down_icon"
+        app:layout_constraintTop_toBottomOf="@+id/browse_details" />
+
+    <TextView
+        android:id="@+id/add_details"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Google Drive, SD card, and more..."
+        android:textSize="15sp"
+        android:textColor="@color/lightGray"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/add_down_icon"
+        app:layout_constraintTop_toBottomOf="@+id/add_text"/>
+
+    <!--  End Center Section  -->
+
+    <!--  Start Bottom Bar  -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#333"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/recent_white_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/recent_white_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recent_down_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recent_white_icon"
+            android:layout_marginStart="36dp"
+            android:text="Recent"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recent_white_icon" />
+
+        <ImageView
+            android:id="@+id/shared_white_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/shared_white_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/search_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shared_white_icon"
+            android:text="Shared"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shared_white_icon" />
+
+        <ImageView
+            android:id="@+id/folder_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/folder_icon"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/folder_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/folder_icon"
+            android:text="Open"
+            android:textSize="12sp"
+            android:textColor="@color/orange"
+            android:layout_marginEnd="41dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/folder_icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--  End Bottom Bar  -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

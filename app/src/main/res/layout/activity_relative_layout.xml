@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- Start Top Bar  -->
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#212121">
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user_icon"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Open"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/user_icon"/>
+
+        <ImageView
+            android:id="@+id/diamond_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/add_up_icon"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/diamond_icon" />
+
+        <ImageView
+            android:id="@+id/add_up_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/add_up_icon"/>
+
+    </RelativeLayout>
+
+    <!--  End Top Bar  -->
+
+    <!--  Start Center Section  -->
+
+    <TextView
+        android:id="@+id/places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightGray"
+        android:text="Places"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/top_bar"/>
+
+    <ImageView
+        android:id="@+id/recent_icon"
+        android:src="@drawable/recent_icon"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/places"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/recent_text"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Recent"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/recent_icon"
+        android:layout_below="@id/places"/>
+
+    <ImageView
+        android:id="@+id/shared_icon"
+        android:src="@drawable/shared_icon"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/recent_icon"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/shared_text"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Shared with me"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/shared_icon"
+        android:layout_below="@id/recent_text"/>
+
+    <ImageView
+        android:id="@+id/device_icon"
+        android:src="@drawable/device_icon"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/shared_icon"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/device_text"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text="This device"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/device_icon"
+        android:layout_below="@id/shared_text"/>
+
+    <ImageView
+        android:id="@+id/browse_icon"
+        android:src="@drawable/browse_icon"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/device_icon"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/browse_text"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Browse"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/browse_icon"
+        android:layout_below="@id/device_text"/>
+
+    <TextView
+        android:id="@+id/browse_details"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Google Drive, SD card, and more..."
+        android:textSize="15sp"
+        android:textColor="@color/lightGray"
+        android:layout_toRightOf="@id/browse_icon"
+        android:layout_below="@id/browse_text"/>
+
+    <ImageView
+        android:id="@+id/add_icon"
+        android:src="@drawable/add_down_icon"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/browse_icon"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/add_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Add a place"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/add_icon"
+        android:layout_below="@id/browse_details"/>
+
+    <TextView
+        android:id="@+id/add_details"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Connect to cloud storage"
+        android:textSize="15sp"
+        android:textColor="@color/lightGray"
+        android:layout_toRightOf="@id/add_icon"
+        android:layout_below="@id/add_text" />
+
+    <!--  End Center Section  -->
+
+    <!--  Start Bottom Bar  -->
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#333"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/recent_white_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/recent_white_icon"
+            android:layout_marginStart="40dp"/>
+
+        <TextView
+            android:id="@+id/recent_down_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recent_white_icon"
+            android:layout_marginStart="36dp"
+            android:text="Recent"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/shared_down_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/shared_white_icon"/>
+
+        <TextView
+            android:id="@+id/search_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shared_down_icon"
+            android:layout_centerHorizontal="true"
+            android:text="Shared"
+            android:textSize="12sp"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/folder_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/folder_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"/>
+
+        <TextView
+            android:id="@+id/folder_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/folder_icon"
+            android:text="Open"
+            android:textSize="12sp"
+            android:textColor="@color/orange"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="41dp"/>
+
+    </RelativeLayout>
+
+    <!--  End Bottom Bar  -->
+
+
+</RelativeLayout>
